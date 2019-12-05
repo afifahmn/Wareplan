@@ -39,29 +39,7 @@ session_start();
 
 </head>
 
-
-<div class="py-1 bg-primary st">
-  <div class="container">
-    <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
-      <div class="col-lg-12 d-block">
-        <div class="row d-flex">
-          <div class="col-md pr-4 d-flex topper align-items-center">
-            <div class="icon mr-2 d-flex justify-content-center align-items-center"></span></div><br>
-            <!-- <span class="text">+62 872 627 2817</span> -->
-          </div>
-          <div class="col-md pr-4 d-flex topper align-items-center">
-            <div class="icon mr-2 d-flex justify-content-center align-items-center"></span></div>
-            <!-- <span class="text">usmart@gmail.com</span> -->
-          </div>
-          <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<nav class="navbar fixed-top navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
   <div class="container">
     <a class="navbar-brand" href="index.php">WarePlan</a>
     <h2>|&nbsp&nbsp</h2><img src="images/logoStore.PNG" width="30px">
@@ -75,17 +53,12 @@ session_start();
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="index.php#shop" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
           <div class="dropdown-menu">
-            <!-- 
-                <a class="dropdown-item" href="index.php#Snack">Snack</a>
-                <a class="dropdown-item" href="index.php#Drink">Drink</a>
-                <a class="dropdown-item" href="index.php#Meals">Meals</a>
-                <a class="dropdown-item" href="index.php#Konveksi">Konveksi</a> -->
             <?php
             $query = "SELECT * FROM kategori";
             $result = mysqli_query($con, $query);
             while ($row = mysqli_fetch_assoc($result)) {
               ?>
-              <a class="dropdown-item" href="index.php#<?= $row['idKategori'] ?>"><?= $row['Kategori'] ?></a>
+              <a class="dropdown-item" href="shop.php#<?= $row['idKategori'] ?>"><?= $row['Kategori'] ?></a>
             <?php } ?>
           </div>
         </li>
@@ -114,6 +87,5 @@ session_start();
         <?php } ?>
       </ul>
     </div>
-    <!-- <a href="pesan.php" class="btn btn-primary">Pesan</a> -->
   </div>
 </nav>
