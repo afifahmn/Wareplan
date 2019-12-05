@@ -50,17 +50,8 @@ session_start();
     <div class="collapse navbar-collapse" id="ftco-nav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="index.php#shop" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-          <div class="dropdown-menu">
-            <?php
-            $query = "SELECT * FROM kategori";
-            $result = mysqli_query($con, $query);
-            while ($row = mysqli_fetch_assoc($result)) {
-              ?>
-              <a class="dropdown-item" href="shop.php#<?= $row['idKategori'] ?>"><?= $row['Kategori'] ?></a>
-            <?php } ?>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php#shop" aria-haspopup="true" aria-expanded="false">Shop</a>
         </li>
 
         <?php

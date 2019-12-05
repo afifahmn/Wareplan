@@ -32,32 +32,35 @@ if (!isset($_SESSION['idLogin'])) {
 
 	<section id="Interests" class="interests">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="color:ivory">
 				<div class="col-6">
-					<h1 class="text-left mt-5 pr-5">
-						<font face="Blenda Script" size="7">Hallo</font>
+					<h1 class="text-left mt-5 pr-5" style="color:ivory">
+						<font face="Blenda Script" size="7">Hallo ~</font>
 					</h1>
-					<p class=" text-justify">
-						<font <br> Pulau Plastik (Plastic Island) is a collaborative campaign to tackle the issue of single-use plastic in Bali and beyond. Pulau Plastik leverages popular culture and includes social media campaigns, short videos, and a feature-length documentary to increase awareness about the hazards of single-use plastic, to change people’s behavior and to advocate for change.
-
-							The time for action is now, so that Bali does not become a Plastic Island!</font>
+					<p class=" text-justify mb-5">
+						<font <br> Penggunaan plastik pada dasarnya dapat memberikan kemudahan dan kepraktisan,
+							sehingga masyarakat sangat sulit untuk menghindari penggunaan plastik tersebut. Akan tetapi dibalik kemudahan dan kepraktisan tersebut, plastik juga memberikan dampak buruk khususnya bagi lingkungan. Plastik sendiri mengandung bahan anorganik buatan yang tersusun dari bahan-bahan kimia yang cukup berbahaya bagi lingkungan dan sulit untuk diuraikan secara alami.
+							Penguraian membutuhkan waktu kurang lebih 80 tahun agar dapat terdegradasi secara sempurna.</font>
 					</p>
 				</div>
 				<div class="col-2"></div>
 				<div class="col-4">
-					<h1 class="text-left mt-5 pr-5">
-						<font face="Blenda Script" size="7">Feeds</font>
-					</h1>
+					<blockquote class="blockquote">
+						<h1 class="text-left mt-5 pr-5" style="color:ivory">
+							<font face="Blenda Script" size="7">Feeds</font>
+						</h1>
+					</blockquote>
 					<img width="120" src="wareplanImages/857046_720.jpg">
-					<img width="120" src="wareplanImages/857046_720.jpg">
-					<img width="120" src="wareplanImages/857046_720.jpg">
+					<img width="120" height="90" src="wareplanImages/1529842242.jpg">
+					<img width="120" height="90" src="wareplanImages/DhJKcaCUYAAkHYv.jpg">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="Player" class="player" style="width: 100%; height: 100%; margin-top: 80px;">
-		<iframe width="100%" height="600" src="https://www.youtube.com/embed/EyzUazucAhU" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<section id="Player" class="player" style="width: 100%; height: 100%;">
+		<iframe frameborder="0" width="100%" height="600" src="https://www.youtube.com/embed/EyzUazucAhU" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 	</section>
 
 	<section id="About" class="about">

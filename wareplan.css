@@ -7,6 +7,15 @@
   background-image: url(images/banner1.jpg);
 }
 
+blockquote {
+  padding-left: 1rem;
+	border-left: 6px solid bisque;
+}
+
+section.interests {
+  background: #181d29;
+}
+
 nav {
   background-color: transparent;
   transition: background-color 1s ease 0s;
@@ -17,6 +26,10 @@ nav.solid {
 	background-color: #ffffff;
 	box-shadow: 0 0 6px #223d41;
 	transition: background-color 1s ease 0s;
+}
+
+li.nav-item:hover {
+  background-color: #ffeed93a;
 }
 
 h1 .wareplan {
