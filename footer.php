@@ -14,7 +14,7 @@
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           Copyright &copy;<script>
             document.write(new Date().getFullYear());
-          </script> All rights reserved | This website is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">StoreID</a> <a href="adminHome.php" target="_blank">Admin</a>
+          </script> All rights reserved | This website is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">Wareplan</a> <a href="adminHome.php" target="_blank">Admin</a>
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
       </div>
