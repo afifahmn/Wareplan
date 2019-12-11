@@ -72,13 +72,20 @@ if (!isset($_SESSION['idLogin'])) {
 <section id="About" class="about">
 	<div class="container">
 		<div class="row py-5">
-			<div class="col-6">
-				<img src="images/Logo.png" width="300">
+			<div class="col-4">
+				<h1 class="text-left">
+					<font size="7">Lihat di Peta</font>
+				</h1>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.5096165257796!2d112.6152643147269!3d-7.946170994276415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788275cf02d1b9%3A0xc4c7c33021b07764!2sJl.%20Semanggi%20No.30a%2C%20Jatimulyo%2C%20Kec.%20Lowokwaru%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065141!5e0!3m2!1sen!2sid!4v1576047741372!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			</div>
-			<div class="col-6">
-				<h4 class="text-right">
+			<div class="col-5 ml-auto">
+				<h4 class="text-left">
 					<font size="7">About</font>
 				</h4>
+				<p class="text-justify text-space">
+					<font> WarePlan adalah sebuah usaha yang bergerak dibidang Green Technology dimana inovasi yang digunakan dengan
+						memanfaatkan sampah plastik dan mengolahnya menjadi tatakan gelas unik yang dapat digunakan sebagai hiasan dinding rumah.</font>
+				</p>
 			</div>
 		</div>
 	</div>

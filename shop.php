@@ -22,17 +22,6 @@ if (!isset($_SESSION['idLogin'])) {
     }
 </style>
 
-
-
-
-
-
-
-
-
-
-
-
 <form action="process/userPesan.php" method="POST" enctype="multipart/form-data">
     <?php
     $query = "SELECT * FROM kategori";
@@ -80,10 +69,9 @@ if (!isset($_SESSION['idLogin'])) {
                 <?php
                     if (isset($_SESSION['idLogin'])) {
                         ?>
-                    <div class="float"><button class=" btn btn-danger" style="height: 40px; width: 120px" type="submit" name="submit"><b>Order</b></button></div>
+                    <div class="float"><button class="btn btn-danger" style="height: 40px; width: 120px" type="submit" name="submit"><b>Order</b></button></div>
                 <?php } else { ?>
-
-                    <div class="float"><a href="login.php" type="submit" style="height: 40px; width: 120px" class=" btn btn-danger"><b>Order</b></a></div>
+                    <div class="float"><a href="login.php" type="submit" style="height: 40px; width: 120px" class="btn btn-danger"><b>Order</b></a></div>
                 <?php } ?>
 
             </div>
@@ -101,8 +89,4 @@ if (isset($_GET["error"])) {
 }
 ?>
 
-
-<head>
-    <?php include 'footer.php' ?>
-
-</head>
+<?php include 'footer.php' ?>

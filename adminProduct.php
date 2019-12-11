@@ -3,13 +3,13 @@
 	include 'process/conSQL.php';
 	session_start();
 	if (!isset($_SESSION['idLogin'])) {
-    	header("Location: index.php");
+		header("Location: index.php");
 	}
 
 	if (isset($_SESSION['loginLevel'])) {
-	    if ($_SESSION['loginLevel'] == 2) {
-	        header("Location: index.php");
-	    }
+		if ($_SESSION['loginLevel'] == 2) {
+			header("Location: index.php");
+		}
 	}
 	include 'adminHeader.php' ?>
 
@@ -18,8 +18,7 @@
 <section class="ftco-section ftco-cart">
 	<div class="container">
 		<div class="col-md-12 heading-section text-center ftco-animate">
-			<span class="subheading">Admin</span>
-			<h2 class="mb-4">Product</h2></br>
+			<h2 class="mb-4">Product List</h2></br>
 		</div>
 
 		<div class="row">
@@ -41,7 +40,6 @@
 						</thead>
 
 						<tbody>
-
 							<?php
 							$query = "SELECT * FROM barang order by idBarang desc";
 							$result = mysqli_query($con, $query);
@@ -59,7 +57,7 @@
 										<td>" . $row["HargaBarang"] . "</td>
 										<td>" . $row["supplier"] . "</td>
 										<td>
-											<a href='adminUpdateProduct.php?id=$idBarang&idcat=".$row["idKategori"]."'  class='btn btn-warning'>Update</a>
+											<a href='adminUpdateProduct.php?id=$idBarang&idcat=" . $row["idKategori"] . "'  class='btn btn-warning'>Update</a>
 										</td>
 										<td> <a href='process/deleteBarang.php?idBarang=$idBarang' class='btn btn-danger'>Delete</a> </td>
 
@@ -77,6 +75,7 @@
 		</div>
 	</div>
 </section>
-<head>
-	<?php include 'footer.php' ?>
-</head>
+<?php include 'script.php' ?>
+</body>
+
+</html>

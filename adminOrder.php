@@ -3,13 +3,13 @@
 	include 'process/conSQL.php';
 	session_start();
 	if (!isset($_SESSION['idLogin'])) {
-    	header("Location: index.php");
+		header("Location: index.php");
 	}
 
 	if (isset($_SESSION['loginLevel'])) {
-	    if ($_SESSION['loginLevel'] == 2) {
-	        header("Location: index.php");
-	    }
+		if ($_SESSION['loginLevel'] == 2) {
+			header("Location: index.php");
+		}
 	}
 	include 'adminHeader.php' ?>
 
@@ -18,7 +18,6 @@
 <section class="ftco-section ftco-cart">
 	<div class="container">
 		<div class="col-md-12 heading-section text-center ftco-animate">
-			<span class="subheading">Admin</span>
 			<h2 class="mb-4">Order List</h2></br>
 		</div>
 
@@ -89,6 +88,7 @@
 		</div>
 	</div>
 </section>
-<head>
-	<?php include 'footer.php' ?>
-</head>
+<?php include 'script.php' ?>
+</body>
+
+</html>

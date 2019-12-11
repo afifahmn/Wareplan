@@ -1,6 +1,5 @@
-
-<?php 
-include 'process/conSQL.php' ;
+<?php
+include 'process/conSQL.php';
 session_start();
 
 if (!isset($_SESSION['idLogin'])) {
@@ -14,23 +13,11 @@ if (isset($_SESSION['loginLevel'])) {
 }
 
 
-include 'adminHeader.php' ;
+include 'adminHeader.php';
 ?>
-	
-    <!-- END nav -->
 
+<body class="admin-bg">
+    <?php include 'script.php' ?>
+</body>
 
-
-  <section id="home" class="hero">
-		  <div class="home-slider owl-carousel">
-	      <div class="slider-item" style="background-image: url(images/admin.png);">
-	      </div>
-
-	      <div class="slider-item" style="background-image: url(images/admin.png);">
-	      </div>
-	    </div>
-    </section>
-
- <head>
-<?php include 'footer.php' ?>
-</head>
+</html>

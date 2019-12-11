@@ -1,23 +1,27 @@
-<?php
-include 'header.php';
-
-?>
-
-<div id="nav" class="fixed-top">
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<nav class="navbar fixed-top navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">
+            <img src="images/NavLogo.png" width="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mx-auto text-center">
-                <a class="nav-item nav-link " href="#home"> <i class="fas fa-home"></i><br> <span>HOME</span></a>
-                <a class="nav-item nav-link " href="#about"><i class="fas fa-user"></i><br> <span>ABOUT</span></a>
-                <a class="nav-item nav-link " href="#experience"><i class="fas fa-brain"></i><br> <span>EXPERIENCE</span></a>
-                <a class="nav-item nav-link " href="#education"><i class="fas fa-chalkboard-teacher"></i><br> <span>EDUCATION</span>
-                </a>
-                <a class="nav-item nav-link " href="#skill"><i class="fas fa-clipboard-check"></i><br> <span>SKILLS</span></a>
-                <a class="nav-item nav-link " href="#interest"><i class="fas fa-lightbulb"></i><br> <span>INTEREST</span></a>
-            </div>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.php" class="nav-link hvr-underline-from-left">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-left" href="shop.php" aria-haspopup="true" aria-expanded="false">Shop</a>
+                </li>
+                <?php if (isset($_SESSION['idLogin'])) { ?>
+                    <li class="nav-item"><a href="pesan.php" class="nav-link hvr-underline-from-left">Order List</a></li>
+                    <li class="nav-item"><a href="history.php" class="nav-link hvr-underline-from-left">History</a></li>
+                    <li class="nav-item"><a href="process/userLogout.php" class="nav-link hvr-underline-from-left">Logout</a></li>
+                <?php } ?>
+                <?php if (!isset($_SESSION['idLogin'])) { ?>
+                    <li class="nav-item"><a href="login.php" class="nav-link hvr-underline-from-left">Login</a></li>
+                <?php } ?>
+            </ul>
         </div>
-    </nav>
-</div>
+    </div>
+</nav>
