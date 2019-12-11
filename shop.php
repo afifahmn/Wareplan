@@ -95,8 +95,8 @@ if (!isset($_SESSION['idLogin'])) {
                         ?>
                     <div class="float"><button class="btn btn-primary" style="height: 40px; width: 120px" type="submit" name="submit">Order</button></div>
                 <?php } else { ?>
-                    <div class="float"><a href="login.php">
-                            <button class="btn btn-primary" style="height: 40px; width: 120px" type="submit" name="submit">Order</button>
+                    <div class="float"><a href="login.php" type="submit" name="submit">
+                            <button class="btn btn-primary" style="height: 40px; width: 120px">Order</button>
                         </a></div>
                 <?php } ?>
 

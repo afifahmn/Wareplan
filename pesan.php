@@ -1,23 +1,21 @@
-<head>
-	<?php
-	error_reporting(0);
-	include 'process/conSQL.php';
-	session_start();
-	if (!isset($_SESSION['idLogin'])) {
-		header("Location: index.php");
-	}
+<?php
+error_reporting(0);
+include 'process/conSQL.php';
+session_start();
+if (!isset($_SESSION['idLogin'])) {
+	header("Location: index.php");
+}
 
-	if (isset($_SESSION['loginLevel'])) {
-		if ($_SESSION['loginLevel'] == 1) {
-			header("Location: adminHome.php");
-		}
+if (isset($_SESSION['loginLevel'])) {
+	if ($_SESSION['loginLevel'] == 1) {
+		header("Location: adminHome.php");
 	}
-	if (isset($_SESSION['idKonsumen'])) {
-		$userid = $_SESSION['idKonsumen'];
-	}
-	include 'header.php'
-	?>
-</head>
+}
+if (isset($_SESSION['idKonsumen'])) {
+	$userid = $_SESSION['idKonsumen'];
+}
+include 'header.php'
+?>
 
 <section class="ftco-section ftco-cart">
 	<div class="container">
@@ -65,7 +63,6 @@
 										";
 								}
 							}
-							// mysqli_close($con);
 							?>
 						</tbody>
 
@@ -126,9 +123,7 @@
 							</span>
 						</p>
 
-						<button class="d-flex total-price" type="submit" name="submit"><span></span><span><a class="btn btn-primary py-3 px-4">PROCESS</a></center></button>
-
-						<!-- <p class="d-flex total-price"><span></span><span><a href="status.php" class="btn btn-primary py-3 px-4">Process</a></center> -->
+						<button class="d-flex total-price btn btn-primary py-3 px-4" type="submit" name="submit">PROCESS</button>
 						</p>
 					</form>
 					</span>
@@ -137,6 +132,4 @@
 		</div>
 </section>
 
-<head>
-	<?php include 'footer.php' ?>
-</head>
+<?php include 'footer.php' ?>
