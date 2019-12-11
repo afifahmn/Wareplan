@@ -75,6 +75,14 @@ h1 .wareplan {
   color: #181d29;
 }
 
+.text-small {
+  font-size: small;
+}
+
+.product .text p.price span.price-sale {
+  color: #181d29;
+}
+
 .table .thead-primary {
   background: #181d29;
 }

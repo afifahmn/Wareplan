@@ -19,7 +19,6 @@ if (!isset($_SESSION['idLogin'])) {
 		top: 500px;
 		right: 50px;
 		z-index: 999;
-
 	}
 </style>
 
