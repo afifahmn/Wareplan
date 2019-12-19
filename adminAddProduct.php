@@ -39,7 +39,7 @@
 
         <div class="pb-md-5">
           <form action="process/addBarang.php" method="POST" enctype="multipart/form-data">
-            <h1><b><a href="">Add Product</a></b></h1>
+            <h1 class="text-dark"><b>Add Product</b></h1>
             <div class="form-group">
               <label>Image <a style='color:red;'>*ukuran foto 1x1</a></label>
               <input type="file" name="file" id="file" class="form-control" placeholder="" required>
@@ -50,8 +50,8 @@
             </div>
 
             <div class="form-group">
-              <label class="col-md-3 col-form-label">Kategori</label>
-              <div class="col-md-9">
+              <label>Kategori</label>
+              <div class=".col-auto .mr-auto">
                 <select class="form-control" name="idKategori" id="idKategori" required>
                   <option disabled selected>Pilih</option>
                   <?php
@@ -73,10 +73,6 @@
             <div class="form-group">
               <label>Price</label>
               <input type="number" class="form-control" placeholder="" name="HargaBarang" id="HargaBarang" required>
-            </div>
-            <div class="form-group">
-              <label>Supplier</label>
-              <input type="text" class="form-control" placeholder="" name="supplier" id="supplier" required>
             </div>
             <div class="form-group">
               <a href="adminProduct.php" class="btn btn-secondary">Cancel</a>

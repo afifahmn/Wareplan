@@ -34,7 +34,7 @@
 								<th>Order</th>
 								<th>Quantity</th>
 								<th>Sub Total</th>
-								<th>Deliver to</th>
+								<th>Alamat</th>
 								<th>Status</th>
 							</tr>
 						</thead>
@@ -62,7 +62,7 @@
 										<td>" . $row["NamaBarang"] . "</td>
 										<td>" . $row["jmlPesanan"] . "</td>
 										<td>" . $total . "</td>
-										<td>" . $row["deliverto"] . "</td>";
+										<td>" . $row["AlamatKonsumen"] . "</td>";
 									if ($row["status"] == 'Process') {
 										echo "
 										<td> <a href='process/statusProcess.php?idPesanan=$idPesanan&idKonsumen=$idKonsumen' class='btn btn-danger py-3 px-4'> " . $row["status"] . "</a></td>";

@@ -6,7 +6,6 @@ $NamaBarang = $_POST["NamaBarang"];
 $JumlahBarang = $_POST["JumlahBarang"];
 $HargaBarang = $_POST["HargaBarang"];
 $idKategori = $_POST["idKategori"];
-$supplier = $_POST["supplier"];
 
 $code = $_FILES['file']['error'];
 if ($code === 0) {
@@ -32,19 +31,19 @@ if ($code === 0) {
     }
 
     if (move_uploaded_file($tmp, $path)) {
-        $query = "UPDATE Barang SET NamaBarang = '$NamaBarang',JumlahBarang ='$JumlahBarang',HargaBarang = '$HargaBarang',idKategori='$idKategori',supplier='$supplier',foto='$nama_file' where idBarang ='$id_Barang'";
+        $query = "UPDATE Barang SET NamaBarang = '$NamaBarang',JumlahBarang ='$JumlahBarang',HargaBarang = '$HargaBarang',idKategori='$idKategori',foto='$nama_file' where idBarang ='$id_Barang'";
 
 
         if (mysqli_query($con, $query)) {
-            header("Location:../adminProduct.php");
+            header("Location:../adminProduct.php?id=$id_Barang");
         } else {
             $error = urldecode("Data tidak berhasil ditambahkan");
-            header("Location:../adminUpdateProduct.php?error=$error");
+            header("Location:../adminUpdateProduct.php?id=$id_Barang&error=$error");
         }
     }
 } else {
     $error = urldecode("Foto tidak berhasil terupload");
-    header("Location:../adminUpdateProduct.php?error=$error");
+    header("Location:../adminUpdateProduct.php?id=$id_Barang&error=$error");
 }
 
 

@@ -94,33 +94,7 @@ include 'header.php'
 
 					<form action="process/Checkout.php" method="POST" enctype="multipart/form-data">
 						<p class="d-flex total-price">
-							<span><label for="">Deliver To</label></span>
-							<span><select name="Deliver" class="form-control" placeholder="pilih" required>
-									<option value="">Choose</option>
-									<option value="Sekret BEM">Sekret BEM</option>
-									<option value="Sekret RISPOL">Sekret RISPOL</option>
-									<option value="Sekret PLFM">Sekret PLFM</option>
-									<option value="Sekret HME">Sekret HME</option>
-									<option value="Sekret KOMPEN">Sekret KOMPEN</option>
-									<option value="Sekret MENWA">Sekret MENWA</option>
-									<option value="Sekret HMM">Sekret HMM</option>
-									<option value="Sekret HMA">Sekret HMA</option>
-									<option value="Sekret DPM">Sekret DPM</option>
-									<option value="Sekret USMA">Sekret USMA</option>
-									<option value="Sekret HMS">Sekret HMS</option>
-									<option value="Sekret PASTI">Sekret PASTI</option>
-									<option value="Sekret HMTK">Sekret HMTK</option>
-									<option value="Sekret OPA GG">Sekret OPA GG</option>
-									<option value="Sekret HIMANIA">Sekret HIMANIA</option>
-									<option value="Sekret SENI">Sekret SENI</option>
-									<option value="Sekret OR">Sekret OR</option>
-									<option value="Sekret PP">Sekret PP</option>
-									<option value="Sekret BKM">Sekret BKM</option>
-									<option value="Sekret HMTI">Sekret HMTI</option>
-									<option value="Sekret KMK">Sekret KMK</option>
-									<option value="Sekret TALITAKUM">Sekret TALITAKUM</option>
-								</select>
-							</span>
+
 						</p>
 
 						<button class="d-flex total-price btn btn-primary py-3 px-4" type="submit" name="submit">PROCESS</button>

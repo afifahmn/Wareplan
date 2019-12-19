@@ -5,15 +5,7 @@ $NamaBarang = $_POST["NamaBarang"];
 $JumlahBarang = $_POST["JumlahBarang"];
 $HargaBarang = $_POST["HargaBarang"];
 $idKategori = $_POST["idKategori"];
-$supplier = $_POST["supplier"];
 
-// $query = "INSERT INTO Barang(NamaBarang, JumlahBarang, HargaBarang, idKategori,supplier) VALUE ('$NamaBarang', '$JumlahBarang', '$HargaBarang',   '$idKategori','$supplier')";
-
-// if (mysqli_query($con, $query)) {
-//     header("Location:../adminProduct.php");
-// } else {
-//     header("Location:adminAddBarang.php");
-// }
 $code = $_FILES['file']['error'];
 if ($code === 0) {
 
@@ -30,12 +22,6 @@ if ($code === 0) {
         header("Location:../daftarBarangAdmin.php?error=$error");
     }
 
-    // $ukuran = $_FILES['file']['size'];
-    // if ($ukuran > 2000000) {
-    //     $error = urldecode("Ukuran melebihi 2 MB");
-    //     header("Location:../adminAddProduct.php?error=$error");
-    // }
-
     $tipe_file = array('image/jpeg', 'image/gif', 'image/png');
     if (!in_array($_FILES['file']['type'], $tipe_file)) {
         $error = urldecode("Cek Kembali Ekstensi File Anda (*jpeg, *jpg, *gif, *png)");
@@ -43,7 +29,7 @@ if ($code === 0) {
     }
 
     if (move_uploaded_file($tmp, $path)) {
-        $query = "INSERT INTO Barang(NamaBarang, JumlahBarang, HargaBarang, idKategori,supplier,foto) VALUE ('$NamaBarang', '$JumlahBarang', '$HargaBarang', '$idKategori','$supplier','$nama_file')";
+        $query = "INSERT INTO Barang(NamaBarang, JumlahBarang, HargaBarang, idKategori,foto) VALUE ('$NamaBarang', '$JumlahBarang', '$HargaBarang', '$idKategori','$nama_file')";
 
         if (mysqli_query($con, $query)) {
             header("Location:../adminProduct.php");

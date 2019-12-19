@@ -33,7 +33,6 @@
 								<th>Category</th>
 								<th>Quantity</th>
 								<th>Price</th>
-								<th>Supplier</th>
 								<th>Update</th>
 								<th>Delete</th>
 							</tr>
@@ -54,8 +53,7 @@
 										<td>" . $row["NamaBarang"] . "</td>
 										<td>" . $row["idKategori"] . "</td>
 										<td>" . $row["JumlahBarang"] . "</td>
-										<td>" . $row["HargaBarang"] . "</td>
-										<td>" . $row["supplier"] . "</td>
+										<td>" . $row["HargaBarang"] . "</td>										
 										<td>
 											<a href='adminUpdateProduct.php?id=$idBarang&idcat=" . $row["idKategori"] . "'  class='btn btn-warning'>Update</a>
 										</td>

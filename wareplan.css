@@ -15,6 +15,11 @@
   background-size: cover;
 }
 
+.regisSuccess-bg {
+  background: url(images/login-bg.jpg);
+  background-size: cover;
+}
+
 .admin-bg {
   background: url(images/admin.jpg);
   background-size: cover;
